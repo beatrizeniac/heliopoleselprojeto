@@ -1,0 +1,116 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #191b32; /* Azul escuro acinzentado */
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    padding: 20px 0;
+    background-color: #ff8321; /* Laranja */
+    color: white;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav button {
+    background-color: #ff8321;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background-color: #e6721b;
+}
+
+.content-box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.admin-section {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.admin-login {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#admin-btn {
+    background-color: #ff8321;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#admin-btn:hover {
+    background-color: #e6721b;
+}
+
+/* Estilos do Formulário Administrativo */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type="file"] {
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #ff8321;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #e6721b;
+}
+
+.post {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
