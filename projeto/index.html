@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Hélio Polesel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Escola Hélio Polesel</h1>
+            <div class="admin-login">
+                <button id="admin-btn" onclick="adminLogin()">Área Administrativa</button>
+            </div>
+        </header>
+        
+        <nav>
+            <button onclick="showContent('mural')">Mural</button>
+            <button onclick="showContent('noticias')">Notícias</button>
+            <button onclick="showContent('horarios')">Horários</button>
+            <button onclick="showContent('ajuda')">Ajuda</button>
+        </nav>
+        
+        <main>
+            <div id="content-box" class="content-box">
+                <h2>Bem-vindo ao site da Escola Hélio Polesel!</h2>
+                <p>Escolha uma seção acima para começar.</p>
+            </div>
+
+            <div id="admin-section" class="admin-section" style="display: none;">
+                <h2>Área Administrativa - Postar Anúncios</h2>
+                <form id="admin-form">
+                    <label for="tipo-post">Tipo de Postagem:</label>
+                    <select id="tipo-post">
+                        <option value="Mural">Mural</option>
+                        <option value="Notícias">Notícias</option>
+                        <option value="Horários">Horários</option>
+                    </select>
+
+                    <label for="conteudo">Conteúdo:</label>
+                    <textarea id="conteudo" placeholder="Escreva seu conteúdo aqui..."></textarea>
+
+                    <label for="imagem">Anexar Imagem (opcional):</label>
+                    <input type="file" id="imagem" accept="image/*">
+
+                    <button type="button" onclick="postContent()">Postar</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
